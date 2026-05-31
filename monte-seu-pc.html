@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <img src="imgs/logo.png" alt="Logo Mundo Gamer" class="logo-topo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gamer - Consultoria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function enviarWhatsapp() {
+            const nome = document.getElementById('nome').value;
+            const peca = document.getElementById('peca').value;
+            const mensagem = `Olá! Meu nome é ${nome} e gostaria de ajuda para escolher meu ${peca}.`;
+            
+            // Substitua o número abaixo pelo seu (ex: 5581999999999)
+            const telefone = "5581900000000"; 
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Mundo Gamer</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="consoles.html">Consoles</a>
+            <a href="pc-gaming.html">PC Gaming</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Consultoria de Peças</h2>
+        <p>Preencha os campos abaixo para tirar suas dúvidas diretamente conosco via WhatsApp.</p>
+        
+        <form id="meuForm">
+            <div style="text-align: left; margin-bottom: 15px;">
+                <label for="nome">Seu Nome:</label><br>
+                <input type="text" id="nome" placeholder="Digite seu nome" style="width: 100%; padding: 8px; border-radius: 5px;">
+            </div>
+
+            <div style="text-align: left; margin-bottom: 15px;">
+                <label for="peca">Qual peça você tem dúvida?</label><br>
+                <select id="peca" style="width: 100%; padding: 8px; border-radius: 5px;">
+                    <option value="Processador">Processador</option>
+                    <option value="Placa de Vídeo">Placa de Vídeo</option>
+                    <option value="Memória RAM">Memória RAM</option>
+                    <option value="Fonte">Fonte</option>
+                </select>
+            </div>
+<img src="imgs/whats.jpg" alt="WhatsApp Suporte" style="width: 100%; max-width: 600px; border-radius: 12px;">
+            <button type="button" onclick="enviarWhatsapp()">Enviar Mensagem</button>
+        </form>
+
+        <hr>
+        <p><a href="pc-gaming.html">← Voltar para PC Gaming</a></p>
+    </main>
+
+    <footer>
+        <p>2026, Mundo Gamer. Trabalho Individual.</p>
+    </footer>
+
+</body>
+</html>

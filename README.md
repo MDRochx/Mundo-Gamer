@@ -11,7 +11,7 @@ Organização: Arquivos HTML na raiz e pastas separadas para imagens (`imgs/`) e
 ---
 
  🌐 Link para ver o site:
- 👉 [Clique aqui para abrir o site](https://mdrochx.github.io/Mundo-Gamer/)**
+ 👉 [Clique aqui para abrir o site](https://mdrochx.github.io/Mundo-Gamer/)
 
  👤 Aluno:
  Sistemas para Internet (UNICAP)
